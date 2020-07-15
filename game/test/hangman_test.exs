@@ -90,4 +90,44 @@ defmodule HangmanTest do
     game = Hangman.make_move(game, "g")
     assert game.game_state == :lost
   end
+
+
+  test "a guessed word is a won game with Enum.reduce" do
+    moves = [
+    {"w", :good_guess},
+    {"i", :good_guess},
+    {"b", :good_guess},
+    {"l", :good_guess},
+    {"e", :won}
+    ]
+
+    game = Hangman.new_game("wibble")
+
+    Enum.reduce(moves, game, fn ({guess, state}, game) ->
+      game = Hangman.make_move(game, guess)
+      assert game.game_state == state
+      game
+    end)
+  end
+
+  test "a non-guessed word is a lost game with Enum.reduce" do
+    game = Hangman.new_game("w")
+
+    moves = [
+    {"a", :bad_guess, 6},
+    {"b", :bad_guess, 5},
+    {"c", :bad_guess, 4},
+    {"d", :bad_guess, 3},
+    {"e", :bad_guess, 2},
+    {"f", :bad_guess, 1},
+    {"g", :lost, 1},
+    ]
+
+    Enum.reduce(moves, game, fn ({ guess, state, turns_left }, game) ->
+      game = Hangman.make_move(game, guess)
+      assert game.game_state == state
+      assert game.turns_left == turns_left
+      game
+    end)
+  end
 end
