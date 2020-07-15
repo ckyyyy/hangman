@@ -2,7 +2,7 @@ defmodule GameTest do
   use ExUnit.Case
   doctest Game
 
-  test "greets the world" do
-    assert Game.hello() == :world
+  test "the truth" do
+    assert 1 + 1 == 2
   end
 end
