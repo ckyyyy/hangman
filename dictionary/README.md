@@ -5,7 +5,7 @@ To random select a word from a words.txt.
 run the below command under dictionary directory
 - `iex -S mix`
 - `Dictionary.random_word`
-![image](https://github.com/ckyyyy/hangman/tree/master/image/dictionary_random_word.png)
+![image](https://github.com/ckyyyy/hangman/blob/master/image/dictionary_random_word.png)
 
 ## Installation
 

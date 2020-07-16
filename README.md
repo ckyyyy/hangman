@@ -14,4 +14,4 @@ TextClient would provide text interface for user to play
 `mix run -e TextClient.start`
 4. start guessing the word by input single letter each times
 - it will display the word to be filled in, the number of turns left, and the letters already used
-![image](https://github.com/ckyyyy/hangman/tree/master/image/text_client_interface.png)
+![image](https://github.com/ckyyyy/hangman/blob/master/image/text_client_interface.png)

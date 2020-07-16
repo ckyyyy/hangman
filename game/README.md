@@ -9,4 +9,4 @@ Game would call APIs to Hangman
 - `game = Game.new_game()`
 - `{ game, tally } = Game.make_move(game, "x")`
 - `tally`
-![image](https://github.com/ckyyyy/hangman/tree/master/image/hangman_game_tally.png)
+![image](https://github.com/ckyyyy/hangman/blob/master/image/hangman_game_tally.png)
