@@ -1,21 +1,12 @@
-# Game
+# Hangman Game
+To guess a word with limited chances.
 
-**TODO: Add description**
+Dictionary would generate a word for Hangman
+Game would call APIs to Hangman
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `game` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:game, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/game](https://hexdocs.pm/game).
-
+### How to run this application
+- `iex -S mix`
+- `game = Game.new_game()`
+- `{ game, tally } = Game.make_move(game, "x")`
+- `tally`
+![image](https://github.com/ckyyyy/hangman/tree/master/image/hangman_game_tally.png)
