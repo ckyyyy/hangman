@@ -4,7 +4,8 @@ defmodule TextClient.Summary do
     IO.puts [
       "\n",
       "Word so far: #{Enum.join(tally.letters, " ")}\n",
-      "Guess left: #{tally.turns_left}\n"
+      "Guess left: #{tally.turns_left}\n",
+      "Guessed letters: #{Enum.join(tally.guessed, " ")}\n",
     ]
     game
   end
