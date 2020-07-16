@@ -3,8 +3,10 @@ To random select a word from a words.txt.
 
 ### How to run this application
 run the below command under dictionary directory
-- `iex -S mix`
-- `Dictionary.random_word()`
+- `iex -S mix`  
+- `Dictionary.random_word()`  
+- `:observer.start`  
+  
 ![image](https://github.com/ckyyyy/hangman/blob/master/image/dictionary_random_word.png)
 
 ## Installation

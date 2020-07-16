@@ -2,11 +2,19 @@ defmodule Dictionary.WordList do
 
   @me __MODULE__
 
+  # {:ok, pid } = Agent.start_link(fn -> 0 end)
+  # Agent.get(pid, fn count -> count end)
+  # Agent.update(pid, fn count -> count + 1 end)
+  # Agent.get_and_update(pid, fn count -> {count, count + 1} end)
+
   def start_link() do
     Agent.start_link(&word_list/0, name: @me)
   end
 
   def random_word() do
+    # if :rand.uniform < 0.33 do
+    #   Agent.get(@me, fn _ -> exit(:boom) end)
+    # end
     Agent.get(@me, &Enum.random/1)
   end
 

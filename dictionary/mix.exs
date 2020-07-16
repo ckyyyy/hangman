@@ -14,6 +14,7 @@ defmodule Dictionary.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
+      #The start/2 function is invoked automatically by the runtime
       mod: { Dictionary.Application, [] },
       extra_applications: [:logger]
     ]
