@@ -17,6 +17,7 @@ defmodule Dictionary.Application do
       strategy: :one_for_one,
     ]
 
+    # call start_link() of each of the child in the children list
     Supervisor.start_link(children, options)
   end
 end

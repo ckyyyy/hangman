@@ -7,6 +7,7 @@ defmodule Dictionary.WordList do
   # Agent.update(pid, fn count -> count + 1 end)
   # Agent.get_and_update(pid, fn count -> {count, count + 1} end)
 
+  # separate the process
   def start_link() do
     Agent.start_link(&word_list/0, name: @me)
   end
