@@ -14,6 +14,8 @@ defmodule TextClient.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
+      # load the code, but not start the application
+      included_applications: [ :game ],
       extra_applications: [:logger]
     ]
   end
