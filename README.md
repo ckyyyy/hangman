@@ -4,6 +4,21 @@ To guess a word with limited chances.
 Dictionary would generate a word for Hangman
 Game would call APIs to Hangman
 TextClient would provide text interface for user to play
+Gallows would provide web interface for user to play
+
+## How to setup & play on Web Interface
+1. checkout the hangman repository  
+2. go to the gallow directory  
+`cd gallows`  
+3. start the phoenix server by following these command
+  * Install dependencies with `mix deps.get`
+  * Install Node.js dependencies with `npm install` inside the `assets` directory
+  * Start Phoenix endpoint with `mix phx.server`
+4. go visit [`localhost:4000`](http://localhost:4000) from your browser
+### Screen shot
+![image](https://github.com/ckyyyy/hangman/blob/master/image/web_client_correct.png)  
+![image](https://github.com/ckyyyy/hangman/blob/master/image/web_client_wrong.png)  
+![image](https://github.com/ckyyyy/hangman/blob/master/image/web_client_won.png)  
 
 ## How to setup & play on Command Line
 1. checkout the hangman repository
