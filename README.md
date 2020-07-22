@@ -5,8 +5,8 @@ Dictionary would generate a word for Hangman
 Game would call APIs to Hangman
 TextClient would provide text interface for user to play
 
-## How to setup & play
-1. checkout the game repository
+## How to setup & play on Command Line
+1. checkout the hangman repository
 2. go to the game directory  
 `cd game`  
 3. start the game server by giving the node name `game`  
