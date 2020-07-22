@@ -1,10 +1,10 @@
 # Hangman Game
-To guess a word with limited chances.
+To guess a word with 7 chances.
 
-Dictionary would generate a word for Hangman
-Game would call APIs to Hangman
-TextClient would provide text interface for user to play
-Gallows would provide web interface for user to play
+Dictionary would generate a word for Hangman  
+Game would call APIs to Hangman  
+TextClient would provide text interface for user to play  
+Gallows would provide web interface for user to play  
 
 ## How to setup & play on Web Interface
 1. checkout the hangman repository  
