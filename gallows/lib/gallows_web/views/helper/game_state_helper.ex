@@ -1,12 +1,12 @@
 defmodule Gallows.Views.Helpers.GameStateHelper do
 
   import Phoenix.HTML, only: [ raw: 1]
-  
+
   @responses %{
     :won => { :success, "You won!"},
     :lost => { :danger, "You lost!"},
     :good_guess => { :success, "Good guess!"},
-    :bad_guess => { :warn, "Bad guess!"},
+    :bad_guess => { :warning, "Bad guess!"},
     :already_guessed => { :info, "You have already guessed that!"},
   }
 

@@ -64,7 +64,7 @@ defmodule Game.Hangman do
   defp score_guess(game = %{ turns_left: 1}, _not_good_guess) do
     # dec turns left
     # 0? :lost, :bad_guess
-    Map.put(game, :game_state, :lost)
+    Map.put(game, :game_state, :lost) |> Map.put(:turns_left, 0)
   end
 
   defp score_guess(game = %{ turns_left: turns_left}, _not_good_guess) do
