@@ -35,7 +35,7 @@ defmodule Game.Hangman do
       game_state: game.game_state,
       turns_left: game.turns_left,
       letters: game.letters |> reveal_guessed(game.guessed),
-      guessed: game.guessed,
+      guessed: game.guessed  |> MapSet.to_list |> Enum.sort(),
     }
   end
 
